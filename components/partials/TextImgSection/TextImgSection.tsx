@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonInterface from '../../../interfaces/Button';
+import { Button } from '../elements/Button/Button';
 import styles from './TextImgSection.module.scss';
 
 interface Props {
@@ -18,17 +19,20 @@ export const TextImgSection = ({title, text, img, buttons, backgroundColor, colo
                 <div className={styles.image}>
                 </div>
             : null}
-            <div className={styles.title}>
-                {title}
-            </div>
-            <div className={styles.text}>
-                {text}
-            </div>
-            { buttons ?
-                buttons.map((button: ButtonInterface) => {
-                    // return button
-                })
-            : null}
+            <section className={styles.textSection}>
+                <div className={styles.title}>
+                    {title}
+                </div>
+                <div className={styles.text}>
+                    {text}
+                </div>
+                <Button text="Pre-order now"></Button>
+                { buttons ?
+                    buttons.map((button: ButtonInterface) => {
+                        // return button
+                    })
+                : null}
+            </section>
         </section>
     )
 }

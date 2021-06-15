@@ -5,7 +5,7 @@ interface ButtonInterface {
     hoverBackgroundColor?: string,
     hoverColor?: string,
     link?: string,
-    function?: string,
+    fn?: string,
 }
 
 export default ButtonInterface;
