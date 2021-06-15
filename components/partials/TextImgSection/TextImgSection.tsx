@@ -9,14 +9,23 @@ interface Props {
     img?: string,
     backgroundColor?: string,
     color?: string,
+    backgroundSize?: number,
     buttons?: ButtonInterface[],
 }
 
-export const TextImgSection = ({title, text, img, buttons, backgroundColor, color}: Props) => {
+export const TextImgSection = ({title, text, img, buttons, backgroundColor, backgroundSize, color}: Props) => {
     return (
-        <section className={styles.main}>
+        <section className={styles.main} style={{
+            backgroundColor,
+            color,
+        }}>
             {img ? 
-                <div className={styles.image}>
+                <div className={styles.image} style={{
+                    background: `url(http://localhost:3000/${img})`,
+                    backgroundSize: backgroundSize ? `${backgroundSize}%` : '100%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                }}>
                 </div>
             : null}
             <section className={styles.textSection}>

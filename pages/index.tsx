@@ -18,7 +18,8 @@ export default function Home() {
         <section className={styles.title}>
           Come play with us
         </section>
-        <TextImgSection title="Join others to play together!" text="With Gaming App, you can join other players that fit your gaming style so you can make new gaming friends and play together." img="./images/test.jpg" />
+        <TextImgSection title="Join others to play together!" text="With Gaming App, you can join other players that fit your gaming style so you can make new gaming friends and play together." img="./images/landing.jpeg"/>
+        <TextImgSection title="Teste Danlimax" backgroundColor="#1e2225" text="Nulla eget tempus libero. Etiam urna lorem, interdum vel placerat at, porta eleifend lacus. Aenean eu augue varius turpis lacinia elementum non at mauris. Nulla finibus orci lectus, quis tincidunt urna hendrerit sit amet. Maecenas cursus, elit at finibus efficitur, mi neque laoreet lacus, in cursus arcu justo a ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque nulla erat, vestibulum vitae nulla vitae, tincidunt faucibus augue." img="./images/background.png" backgroundSize={140} />
       </main>
 
       <footer className={styles.footer}>
