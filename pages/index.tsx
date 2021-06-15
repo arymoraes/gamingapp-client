@@ -18,7 +18,7 @@ export default function Home() {
         <section className={styles.title}>
           Come play with us
         </section>
-        <TextImgSection title="It takes more than soldiers to forge a nation" text="Choose how you'll survive the haunted wilderness of Aeternum as you forge alliances, battle for resources, and make your mark on an emerging empire." img="./images/test.jpg" />
+        <TextImgSection title="Join others to play together!" text="With Gaming App, you can join other players that fit your gaming style so you can make new gaming friends and play together." img="./images/test.jpg" />
       </main>
 
       <footer className={styles.footer}>

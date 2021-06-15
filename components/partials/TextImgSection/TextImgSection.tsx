@@ -26,12 +26,15 @@ export const TextImgSection = ({title, text, img, buttons, backgroundColor, colo
                 <div className={styles.text}>
                     {text}
                 </div>
-                <Button text="Pre-order now"></Button>
-                { buttons ?
-                    buttons.map((button: ButtonInterface) => {
-                        // return button
-                    })
-                : null}
+                <section className={styles.buttons}>
+                    <Button text="Login"></Button>
+                    <Button text="Signup" color="rgb(219, 216, 31)" backgroundColor="black"></Button>
+                    { buttons ?
+                        buttons.map((button: ButtonInterface) => {
+                            // return button
+                        })
+                    : null}
+                </section>
             </section>
         </section>
     )

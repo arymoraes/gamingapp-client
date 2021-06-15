@@ -11,7 +11,7 @@
     height: 50%;
     min-height: 34.5vh;
 
-    background: url('http://localhost:3000/images/test.jpg');
+    background: url('http://localhost:3000/images/landing.jpeg');
     background-size: 100%;
     background-position: center;
 
@@ -29,4 +29,13 @@
 
 .textSection {
     padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        padding: .4rem 0;
+    }
 }
