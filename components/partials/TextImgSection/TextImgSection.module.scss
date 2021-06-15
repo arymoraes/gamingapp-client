@@ -1,0 +1,28 @@
+.main {
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 100vw;
+    height: 50%;
+    min-height: 30vh;
+
+    background: url('http://localhost:3000/images/test.jpg');
+    background-size: 100%;
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.title, .text {
+    padding: 1rem;
+}
