@@ -18,6 +18,7 @@ export const TextImgSection = ({title, text, img, buttons, backgroundColor, back
         <section className={styles.main} style={{
             backgroundColor,
             color,
+            backgroundImage: `url(http://localhost:3000/${img})`,
         }}>
             {img ? 
                 <div className={styles.image} style={{
